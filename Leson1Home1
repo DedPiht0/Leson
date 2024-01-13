@@ -1,0 +1,88 @@
+package lesson1;
+
+public class lesson1Home1 {
+    public static void main(String[] args) {
+        // 1. Создайте переменную типа int и присвойте ей любое значение. Затем присвойте этой переменной другое значение
+
+        int numberOne = 10;
+        int numberTwo = 20;
+
+        numberOne = numberTwo;
+
+        System.out.println(numberOne);
+
+
+        // 2. Создайте другую переменную того же типа что и первая переменная и присвойте ей результат сложение первой переменной с каким-нибудь числом
+
+        int numberThree = 50;
+
+        int result = numberOne + numberThree;
+
+        System.out.println(result);
+
+
+        // 3. Возведите в квадрат переменную которая получилась во втором задании.(Без использования библиотек)
+
+        System.out.println(result*2);
+
+
+        // 4. Составьте из переменных или из литералов или из того и другого какое-инбудь выражение посложнее.
+        // Нарпимер формулу расчета окружности. Или просто 2 произвения и одно сложение в одном выражении.(Не забываем про круглые скобки)
+
+        int one = 10;
+        int two = 20;
+        int three = 40;
+
+        int result2 = ((one + three)*two);
+
+        System.out.println(result2);
+
+
+        // 5. Напишите операцию преобразования например 6 часов в секунды.(Результат вывести на консоль)
+
+        int hour = 6;
+        int secPerMin = 60;
+        int minPerHour = 60;
+
+        int result3 = ((hour * minPerHour) * secPerMin);
+
+        System.out.println(result3);
+
+
+        // 6. Cоздайте две переменные и в выражении определите больше ли первая переменная или нет.
+
+        double number1 = 0.22;
+        double number2 = 0.23;
+
+        boolean result4 = number1 > number2;
+
+        System.out.println(result4);
+
+        // 7. Определить в выражении является ли какое-нибудь число четным.
+
+        int numOne = 52;
+
+        int resultOne = 52 % 2;
+
+        System.out.println(resultOne);
+
+
+        // 8. В одном выражении сравните результат выполнения одного произведения и одного вычитания.(Результат вывести на консоль)
+
+        int nOne = 50;
+        int nTwo = 20;
+
+        int result1 = nOne * nTwo;
+        int resultTwo = nOne - nTwo;
+
+        System.out.println(result1 != resultTwo);
+
+
+
+
+
+
+
+
+    }
+}
