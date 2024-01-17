@@ -1,0 +1,59 @@
+public class lesson2Home2 {
+
+
+    public static void main(String[] args) {
+        
+       // Для трех чисел, найти минимальное, максимальное и среднее
+        int number1 = 10;
+        int number2 = 20;
+        int number3 = 30;
+
+        if (number1 <= number2 || number1 <= number3){
+            System.out.println(number1 + " " + "Минимальное число");
+        } if (number1 <= number2 || number2 <= number3) {
+            System.out.println(number2 + " " + "Среднее число");
+        }  if (number1 <=number3 || number3 >= number2) {
+            System.out.println(number3 + " " + "Максимальное число");
+
+        } else {
+            System.out.println("Неизвестное число");
+        }
+//
+//        Medium: Написать программу, которая по полученному году определяет, является ли этот он високосным.
+//    Год считается високосным, если он делится без остатка на 4. Однако,
+//    если год также делится на 100, то этот год не високосный, за исключением годов, делящихся на 400.
+
+        int yers = 1600;
+        int num1 = 4;
+        int num2 = 100;
+        int num3 = 400;
+
+        if (yers % num1 == 0) {
+            System.out.println("Високосный");
+        } else if (yers % num2 == 0 && yers % num2 !=0) {
+            System.out.println("Високосный");
+        } else if (yers % num2 == 0 && yers % num2 !=0 && yers % 400 == 0) {
+            System.out.println("Не високосный");
+        } else {
+            System.out.println("Не Високосный");
+        }
+
+
+//    Hard: Имеется целое число. Это число - сумма денег в рублях.
+//    Вывести это число, добавив к нему слово "рубль" в правильном падеже ("рубль", "рублей", "рубля").
+// ЗДЕСЬ У МЕНЯ ВОПРОСЫ ЕСТЬ, НЕ ПОНЯЛ ДО КОНЦА КАК ПРИМЕНИТЬ 
+
+        int num = 51;
+
+        String rub = switch (num) {
+            case 1 -> "Рубль";
+            case 2 -> "Рубля";
+            case 3 -> "Рубля";
+            case 4 -> "Рубля";
+            default -> "Рублей";
+        };
+        System.out.println(rub);
+
+
+    }
+}
